@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import Layout from './containers/Layout'
 import Home from './components/Home/Home'
 

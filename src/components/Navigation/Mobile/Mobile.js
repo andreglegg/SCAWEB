@@ -1,7 +1,7 @@
 import React from 'react';
 import FaBeer from 'react-icons/lib/fa/beer';
 
-import classes from './Mobile.module.css'
+import classes from './Mobile.module.scss'
 
 const mobile = (props) => {
     return (

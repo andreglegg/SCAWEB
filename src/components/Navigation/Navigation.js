@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Mobile from './Mobile/Mobile';
 import Desktop from './Desktop/Desktop';
 
-import classes from './Navigation.module.css'
+import classes from './Navigation.module.scss'
 
 class Navigation extends Component {
     state = {

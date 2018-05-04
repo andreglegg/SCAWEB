@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import classes from './Layout.module.css'
+import classes from './Layout.module.scss'
 import Navigation from '../components/Navigation/Navigation'
 //import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer'
 

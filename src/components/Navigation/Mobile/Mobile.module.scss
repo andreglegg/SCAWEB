@@ -1,0 +1,91 @@
+@import "../../../cssvars";
+.Mobile {
+    position: absolute;
+    right: 0;
+    .Slideout {
+        cursor: pointer;
+        padding-top: 4px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        transition: top 0.3s;
+        z-index: 101;
+        .Expand {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 20px;
+            justify-content: space-between;
+            span {
+                background: $white;
+                border-radius: 3px;
+                display: block;
+                flex: 0 0 4px;
+                height: 4px;
+                position: relative;
+                top: 0;
+                transition: background-color 0.3s, top 0.3s, opacity 0.3s, transform 0.3s;
+                width: 20px;
+
+            }
+        }
+    }
+    .SlideoutActive {
+        top: -2px;
+        .Expand {
+            span:nth-child(1) {
+                background-color: $dark;
+                top: 16px;
+                transform: rotate(45deg);
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                background-color: $dark;
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+    .SlidingNav {
+        background: $light;
+        box-sizing: border-box;
+        height: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        width: 0;
+        ul {
+            flex-flow: column nowrap;
+            list-style: none;
+            padding: 10px;
+            li {
+                margin: 0;
+                padding: 2px 0;
+                a {
+                    color: $primary;
+                    display: inline;
+                    margin: 3px 5px;
+                    padding: 2px 0;
+                    transition: background-color 0.3s;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .SlidingNav.SlidingNavActive {
+        height: auto;
+        padding-top: 42px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Mobile {
+        display: none;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Desktop.module.css'
+import classes from './Desktop.module.scss'
 
 const desktop = (props) => {
     return (
