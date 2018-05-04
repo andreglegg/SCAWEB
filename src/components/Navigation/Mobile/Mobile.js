@@ -7,12 +7,12 @@ const mobile = (props) => {
     return (
         <div className={classes.Mobile}>
             <div>
-                <div class={[classes.Slideout, props.slideoutActive ? classes.SlideoutActive : null].join(' ')}
+                <div className={[classes.Slideout, props.slideoutActive ? classes.SlideoutActive : null].join(' ')}
                      onClick={props.slideOutClicked}>
-                    <i class={classes.Expand}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <i className={classes.Expand}>
+                        <span/>
+                        <span/>
+                        <span/>
                     </i>
                 </div>
                 <nav className={[classes.SlidingNav, props.slideoutActive ? classes.SlidingNavActive : null].join(' ')}>

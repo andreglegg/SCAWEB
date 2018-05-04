@@ -7,7 +7,8 @@
     "custom-react-scripts": "^0.2.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-icons": "^2.2.7"
+    "react-icons": "^2.2.7",
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

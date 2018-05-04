@@ -1,10 +1,36 @@
+@import "../../../cssvars";
+.Desktop {
+    height: 34px;
+    margin-left: auto;
+    nav {
+        position: relative;
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 0 -10px;
+            li {
+                padding: 0 10px;
+                display: block;
+            }
+            a {
+                border: 0;
+                color: $light;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.2em;
+            }
+            a:hover {
+                border-bottom: 2px solid $light;
+            }
+        }
+    }
+}
 .Desktop {
     display: none;
 }
 @media only screen and (min-width: 1024px) {
     .Desktop {
         display: block;
-        height: 34px;
-        margin-left: auto;
+
     }
 }

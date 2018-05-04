@@ -23,3 +23,12 @@
     flex-flow: row nowrap;
     height: 34px;
 }
+
+.LogoHide {
+
+}
+@media only screen and (max-width: 290px) {
+    .LogoHide {
+        display: none;
+    }
+}
