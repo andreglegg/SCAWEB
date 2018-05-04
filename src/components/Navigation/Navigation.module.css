@@ -1,0 +1,25 @@
+.Navigation {
+    background: #1C2836;
+    color: #fff;
+    height: 34px;
+    padding: 10px 0 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.Navigation header {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    text-align: left;
+}
+
+.Navigation a {
+    align-items: center;
+    border: 0;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 34px;
+}
