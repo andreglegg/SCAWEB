@@ -6,7 +6,9 @@ class Home extends Component {
             <div className={classes.Home}>
                 <div className={classes.Intro}>
                     <div className="wrapper">
-                        intro content
+                        <div className={classes.inroContent}>
+                            <h1>Intro Content</h1>
+                        </div>
                     </div>
                 </div>
                 Home

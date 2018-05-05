@@ -16,8 +16,8 @@
             height: 20px;
             justify-content: space-between;
             span {
-                background: $white;
-                border-radius: 3px;
+                background: $light;
+                /*border-radius: 3px;*/
                 display: block;
                 flex: 0 0 4px;
                 height: 4px;
@@ -25,7 +25,6 @@
                 top: 0;
                 transition: background-color 0.3s, top 0.3s, opacity 0.3s, transform 0.3s;
                 width: 20px;
-
             }
         }
     }
@@ -33,7 +32,7 @@
         top: -2px;
         .Expand {
             span:nth-child(1) {
-                background-color: $dark;
+                background-color: $lightBlue;
                 top: 16px;
                 transform: rotate(45deg);
             }
@@ -41,14 +40,15 @@
                 opacity: 0;
             }
             span:nth-child(3) {
-                background-color: $dark;
+                background-color: $lightBlue;
                 transform: rotate(-45deg);
             }
         }
 
     }
     .SlidingNav {
-        background: $light;
+        background: rgba($primaryDark, 1);
+        border-radius: 6px;
         box-sizing: border-box;
         height: 0;
         padding: 0;
@@ -65,14 +65,13 @@
                 margin: 0;
                 padding: 2px 0;
                 a {
-                    color: $primary;
+                    color: $light;
                     display: inline;
                     margin: 3px 5px;
                     padding: 2px 0;
-                    transition: background-color 0.3s;
                 }
                 a:hover {
-                    border-bottom: 2px solid $primary;
+                    border-bottom: 2px solid $lightBlue;
                 }
             }
         }
@@ -81,6 +80,8 @@
         height: auto;
         padding-top: 42px;
         width: 300px;
+        opacity: 1;
+        border: 1px solid $lightBlue;
     }
 }
 

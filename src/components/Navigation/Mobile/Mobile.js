@@ -17,10 +17,10 @@ const mobile = (props) => {
                 </div>
                 <nav className={[classes.SlidingNav, props.slideoutActive ? classes.SlidingNavActive : null].join(' ')}>
                     <ul>
-                        <li className={classes.NavItem}><a href="#">Link</a></li>
-                        <li className={classes.NavItem}><a href="#">Link</a></li>
-                        <li className={classes.NavItem}><a href="#">Link</a></li>
-                        <li className={classes.NavItem}><a href="#">Link</a></li>
+                        <li className={classes.NavItem}><a href="#">Home</a></li>
+                        <li className={classes.NavItem}><a href="#">Download</a></li>
+                        <li className={classes.NavItem}><a href="#">About</a></li>
+                        <li className={classes.NavItem}><a href="#">FAQ</a></li>
                     </ul>
                 </nav>
             </div>

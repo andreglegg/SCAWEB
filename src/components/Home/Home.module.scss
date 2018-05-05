@@ -1,9 +1,26 @@
 @import "../../cssvars.scss";
 .Home {
+    .Intro {
+        padding-top: 52px;
+        background: $primary url("../../assets/images/bg1.jpg") no-repeat;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        align-content: stretch;
+            div {
+                display: flex;
+                width: 100%;
+                align-content: stretch;
+                .inroContent {
+                    flex: 1;
+                    background-image: url("../../assets/images/screenshot1.png");
+                    background-repeat: no-repeat;
+                    background-position: bottom center;
+                }
+            }
 
+
+    }
 }
 
-.Intro {
-    background: $primary;
-    height: 600px;
-}

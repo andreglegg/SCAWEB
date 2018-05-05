@@ -6,10 +6,10 @@ const desktop = (props) => {
         <div className={classes.Desktop}>
             <nav>
                 <ul>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
         </div>
