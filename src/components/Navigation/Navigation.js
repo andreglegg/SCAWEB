@@ -22,7 +22,7 @@ class Navigation extends Component {
             <div className={classes.Navigation}>
                 <div className="wrapper">
                     <header>
-                        <a href="#"><img src={logo} alt="logo"/><span className={classes.LogoHide}>Star Citizen Assistant</span></a>
+                        <a href="#"><img src={logo} className={classes.LogoImg} alt="logo"/><span className={classes.LogoHide}>Star Citizen Assistant</span></a>
                         <Desktop/>
                         <Mobile slideoutActive={this.state.slideoutActive} slideOutClicked={this.handlerSlideoutClicked}/>
                     </header>

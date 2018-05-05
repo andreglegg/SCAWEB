@@ -13,6 +13,9 @@
     flex-flow: row nowrap;
     position: relative;
     text-align: left;
+    .LogoImg {
+        margin-right: 10px;
+    }
 }
 
 .Navigation a {
