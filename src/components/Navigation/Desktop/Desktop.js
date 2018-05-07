@@ -8,7 +8,7 @@ const desktop = (props) => {
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Download</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Roadmap</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>

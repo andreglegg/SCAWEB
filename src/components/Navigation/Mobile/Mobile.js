@@ -19,7 +19,7 @@ const mobile = (props) => {
                     <ul>
                         <li className={classes.NavItem}><a href="#">Home</a></li>
                         <li className={classes.NavItem}><a href="#">Download</a></li>
-                        <li className={classes.NavItem}><a href="#">About</a></li>
+                        <li className={classes.NavItem}><a href="#">Roadmap</a></li>
                         <li className={classes.NavItem}><a href="#">FAQ</a></li>
                     </ul>
                 </nav>
