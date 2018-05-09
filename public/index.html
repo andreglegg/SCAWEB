@@ -20,11 +20,20 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118752469-2"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
 
-    gtag('config', 'UA-118752469-2');
+        console.log("Development Server")
+        } else {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118752469-2');
+    }
 </script>
 
 </body>

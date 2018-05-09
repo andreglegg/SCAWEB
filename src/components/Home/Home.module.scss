@@ -1,5 +1,9 @@
 @import "../../cssvars.scss";
 .Home {
+    color: $primary;
+    h1 {
+        color: $primaryDark;
+    }
     .Intro {
         padding-top: 52px;
         background: $primary url("../../assets/images/bg1.jpg") no-repeat;

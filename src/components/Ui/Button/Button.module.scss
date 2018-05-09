@@ -27,3 +27,12 @@
         background: $black;
     }
 }
+
+.DownloadYellow {
+    background: #212225;
+    border: 1px solid #BE6F2C;
+    color: #BE6F2C;
+    &:hover {
+        background: #323437;
+    }
+}

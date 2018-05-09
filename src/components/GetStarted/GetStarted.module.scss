@@ -1,0 +1,51 @@
+@import "../../cssvars";
+
+.GetStarted {
+    color: $primary;
+    h1 {
+        margin: 20px 0;
+        padding: 20px 0;
+        color: $primaryDark;
+        font-size: 2em;
+    }
+
+    ol.TiltedList {
+        list-style-type: none;
+
+
+        margin: 0;
+        margin-left: 3em;
+        padding: 0;
+
+        counter-reset: li-counter;
+    }
+    ol.TiltedList > li{
+        position: relative;
+        margin-bottom: 20px;
+        padding: 1em;
+        border-left: 6px solid $lightBlue;
+        background-color: $primary;
+        color: $lightBlue;
+    }
+    ol.TiltedList > li:before {
+        position: absolute;
+        top: 0;
+        left: -0.95em;
+        width: 1em;
+
+        font-size: 4em;
+        line-height: 1;
+        font-weight: bold;
+        text-align: right;
+        color: $primary;
+
+        transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        -webkit-transform: rotate(-25deg);
+        z-index: -99;
+        overflow: hidden;
+
+        content: counter(li-counter);
+        counter-increment: li-counter;
+    }
+}
