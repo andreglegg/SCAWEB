@@ -9,14 +9,15 @@ import {
 } from 'react-router-dom';
 
 class App extends Component {
+
+
+
     render() {
         return (
             <Router>
-                <Layout>
                     <Switch>
-                        <Route exact path="/" component={Home} />
+                        <Route exact path="/" component={Layout} />
                     </Switch>
-                </Layout>
             </Router>
         );
     }

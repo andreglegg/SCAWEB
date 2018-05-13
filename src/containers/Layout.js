@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 
 import classes from './Layout.module.scss'
 import Navigation from '../components/Navigation/Navigation'
+import Home from '../components/Home/Home';
+import GetStarted from '../components/GetStarted/GetStarted';
+import Roadmap from '../components/Roadmap/Roadmap';
+import Footer from '../components/Footer/Footer';
 //import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer'
 
 class Layout extends Component {
@@ -29,9 +33,10 @@ class Layout extends Component {
             <React.Fragment>
                 <Navigation drawerToggleClicked={this.sideDrawerToggleHandler}/>
                 {/*<SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>*/}
-                <main className={classes.Content}>
-                    {this.props.children}
-                </main>
+                <Home/>
+                <GetStarted/>
+                <Roadmap/>
+                <Footer/>
             </React.Fragment>
         )
     }

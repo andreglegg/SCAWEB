@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { animateScroll as scroll } from 'react-scroll'
 
 import Mobile from './Mobile/Mobile';
 import Desktop from './Desktop/Desktop';
@@ -22,7 +23,7 @@ class Navigation extends Component {
             <div className={classes.Navigation}>
                 <div className="wrapper">
                     <header>
-                        <a href="#"><img src={logo} className={classes.LogoImg} alt="logo"/><span className={classes.LogoHide}>Star Citizen Assistant</span></a>
+                        <a onClick={() => scroll.scrollToTop({duration: 500})}><img src={logo} className={classes.LogoImg} alt="logo"/><span className={classes.LogoHide}>Star Citizen Assistant</span></a>
                         <Desktop/>
                         <Mobile slideoutActive={this.state.slideoutActive} slideOutClicked={this.handlerSlideoutClicked}/>
                     </header>

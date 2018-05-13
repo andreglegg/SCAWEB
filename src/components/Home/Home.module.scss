@@ -1,6 +1,6 @@
 @import "../../cssvars.scss";
 .Home {
-    color: $primary;
+    color: $light;
     h1 {
         color: $primaryDark;
     }
@@ -8,10 +8,11 @@
         padding-top: 52px;
         background: $primary url("../../assets/images/bg1.jpg") no-repeat;
         background-size: cover;
-        height: 600px;
+        height: calc(100vh - 319px);
         width: 100%;
         display: flex;
         align-content: stretch;
+        border-bottom: 1px solid #405171;
             div {
                 display: flex;
                 width: 100%;
@@ -21,7 +22,7 @@
                     background-image: url("../../assets/images/heroBg.png");
                     background-repeat: no-repeat;
                     background-position: bottom center;
-                    background-size: auto;
+                    background-size: contain;
                     justify-content: center;
                     padding-top: 60px;
                     box-sizing: border-box;
@@ -50,6 +51,23 @@
 
 
     }
+    .DescriptionWrap {
+        background: #1c2737;
+        border-bottom: 1px solid #405171;
+        .Description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto ;
+            padding: 30px 0;
+            color: $gold;
+            p{
+                line-height: 1.2em;
+                padding: 10px;
+            }
+        }
+
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {

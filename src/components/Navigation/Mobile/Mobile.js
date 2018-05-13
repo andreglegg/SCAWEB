@@ -1,5 +1,6 @@
 import React from 'react';
-import FaBeer from 'react-icons/lib/fa/beer';
+import { Link, animateScroll as scroll } from 'react-scroll'
+//import FaBeer from 'react-icons/lib/fa/beer';
 
 import classes from './Mobile.module.scss'
 
@@ -17,10 +18,10 @@ const mobile = (props) => {
                 </div>
                 <nav className={[classes.SlidingNav, props.slideoutActive ? classes.SlidingNavActive : null].join(' ')}>
                     <ul>
-                        <li className={classes.NavItem}><a href="#">Home</a></li>
-                        <li className={classes.NavItem}><a href="#">Download</a></li>
-                        <li className={classes.NavItem}><a href="#">Roadmap</a></li>
-                        <li className={classes.NavItem}><a href="#">FAQ</a></li>
+                        <li><a onClick={() => scroll.scrollToTop({duration: 500})}>Home</a></li>
+                        <li><Link activeClass="active" to="gettingStarted" spy={true} smooth={true} duration={500} >Getting Started</Link></li>
+                        <li><Link activeClass="active" to="roadmap" spy={true} smooth={true} duration={500} >Roadmap</Link></li>
+                        <li><Link activeClass="active" to="gettingStarted" spy={true} smooth={true} duration={500} >FAQ</Link></li>
                     </ul>
                 </nav>
             </div>

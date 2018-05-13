@@ -1,0 +1,50 @@
+@import "../../cssvars";
+
+.Roadmap {
+    padding: 30px 0;
+    color: $primary;
+    background: #1c2737;
+    border-top: 1px solid #405171;
+    /*border-bottom: 1px solid #405171;*/
+    h1 {
+        margin: 25px 0 25px;
+        padding: 20px 0;
+        color: $lightBlue;
+        font-size: 2em;
+    }
+    .Strike{
+        text-decoration-line: line-through;
+        text-decoration-color: $primaryDark;
+        /*background: grey;*/
+        color: $primaryDark;
+        border-color: $dark;
+        opacity: 0.8;
+    }
+
+    ul {
+        color: $lightBlue;
+        li {
+            background: #293646;
+            margin-bottom: 6px;
+            padding: 15px 20px;
+            border-radius: 6px;
+            /*border: 1px solid $primary;*/
+            /*border-left: 6px solid rgba($lightBlue, 1);*/
+            &:hover {
+                /*background: rgba(#293646, .5);*/
+            }
+            ul {
+                margin-left: 30px;
+                margin-top: 10px;
+
+                li {
+                    overflow: hidden;
+                    background: rgba($primary, 0.5);
+                    margin-bottom: 6px;
+                    /*border-left: 3px solid rgba($lightBlue, 0.7);*/
+                    /*border-bottom: 1px solid rgba($lightBlue, 0.7);*/
+                }
+            }
+        }
+    }
+}
